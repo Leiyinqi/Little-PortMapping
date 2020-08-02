@@ -1,0 +1,20 @@
+This is my study Project.
+I'l be glad if it could help you.
+Situation:
+	You have to access your laptop in LAN using ssh,and you have a server in WAN.
+Usage:
+	git clone git@github.com:Leiyinqi/Little-PortMapping.git
+
+	On your server:
+	python3 forward.py --server 1 -r 20001 -l 20002
+	On your LAN Computer:
+	python3 forward.py --client 1 -r 22 -l 20001 --host (your server's ip)
+
+	then you can access computer in LAN by command:
+	ssh root@(server's ip) -p 20002
+
+
+modified from:
+https://github.com/knownsec/rtcp
+	
+	
